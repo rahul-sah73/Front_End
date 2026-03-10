@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV_1</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+         }
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: white;
+         }
+         nav{
+            width: 100% ;
+            padding: 1rem 5%;  /* 1 rem = 16px */
+            background : rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            margin-bottom:2rem;
+
+            /* 1st layout */
+            /* display: flex;
+            align-items: center;
+            justify-content: space-between; */
+
+            /* 2nd layout */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+         }
+         .logo{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #38bdf8;
+            letter-spacing: 1px;
+
+            /* 2nd layout */
+            margin-right: auto;
+            
+            
+         }
+
+         .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            /* 2nd layout */
+            margin-right: 30px;
+
+
+         }
+
+         .nav-links li a{
+            position: relative;
+            font-size: 1.05rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: #e2e8f0;
+            transition: 0.3s;
+
+         }
+
+         .nav-links li a:hover{
+
+            color: #38bdf8;
+            text-shadow: 0 0 10px #38bdf8;
+
+         }
+         .btns{
+            display: flex;
+         }
+        .btn{
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            background: #38bdf8;
+            color: #0f172a;
+            box-shadow: 0 0 15px #38bdf8;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+        .btn:hover{
+            background: #38bdf8;
+            box-shadow: 0 0 25px #38bdf8;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <div class="btns">
+            <button class="btn">Login</button>
+        </div>
+    </nav>
+</body>
+</html>

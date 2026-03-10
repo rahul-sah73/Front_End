@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button[type="reset"] {
+            background: #f44336;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>This is way of creating form </h1>
+    <form action="submit.php">
+        <div>
+            <label for="name">name:</label><br>
+            <input id="name" type="text" placeholder="first name" required>
+            <input id="name" type="text" placeholder="last name " required>
+
+        </div>
+        <div>
+            <label for="DOB">Date of Birth:</label>
+            <input id="DOB" type="date" required>
+            <br>
+            <label for="address">address:</label>
+
+            <input for="address" type="text" placeholder="Your current addresss">
+        </div>
+
+        <div>
+            <label for="phone no">phone no. :</label>
+            <input id="phone no" type="tel" placeholder="your ph no ." required>
+        </div>
+        <div>
+            <label for="email">email :</label>
+            <input id="email" type="email" placeholder="email.example@gamil.com" required>
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input id="password" type="password" placeholder="at least 6 chracter" required>
+        </div>
+        <div>
+            <label for="">religion :</label>
+            <input id="religion" type="text" placeholder="your religion" required>
+        </div>
+        <div>
+            <label for="natinality">nationality</label>
+            <input id="nationality" type="text" placeholder="your nationality " required>
+        </div>
+
+        <div>
+            <label for="gender">gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+        <h3>please select your fav anime </h3>
+        <div>
+            <input id="king" type="radio" name="fav anime" value="king">
+            <label for="king">one piece</label>
+            <input id="hokage" type="radio" name="fav anime" value="hokage">
+            <label for="hokage">naruto</label>
+            <input id="sinigami" type="radio" name="fav anime" value="sinigami">
+            <label for="sinigami">bleach </label>
+            <input id="hentai" type="radio" name="fav anime" value="hentai">
+            <label for="hentai">overflow</label>
+
+        </div>
+
+        <div>
+            <input id="term" type="checkbox" required>
+            <label for="terms">i agree with your terms and condition</label>
+        </div>
+        <div>
+            <label for="comment">comment</label>
+            <textarea id="comment" placeholder="enter your thougts" rows="4"></textarea>
+        </div>
+        <div>
+            <hr>
+            <button type="submit ">submit</button>
+            <button type="reset">re enter</button>
+        </div>
+    </form>
+
+
+    <video src="NEB/WhatsApp Video 2025-02-24 at 19.33.55_07b6d51c.mp4" width="100" autoplay muted controls></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0?si=EqFNcz2L6DSuVaOt"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <!-- to add youtube video go to that video and click on share 
+                   and click on embaded copy the cod and paste in your code -->
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/sivn5BX3Lic?si=6fRc5XullybCbIXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fTrqoVSrw1Y?si=15bXmjXJliZiuzUi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <video width="200" autoplay>
+    <source src="NEB/WhatsApp Video 2025-02-24 at 19.33.55_07b6d51c.mp4" type="WhatsApp Video 2025-02-24 at 19.33.55_07b6d51c/mp4">
+</video> -->
+</body>
+
+</html>
